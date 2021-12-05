@@ -8,9 +8,17 @@ let vm = new Vue({
 			classNum:1,
 			teacher:[1,2],
 			total:2,
+			info:{
+				a:{
+					b:{
+                       name:"hello"
+					}
+				}
+			},
 			students:[
 			{
-             name:"admin"
+             name:"admin",
+             a:[1,2,3,4]
 			},
 			{
              name:"test"
@@ -18,3 +26,5 @@ let vm = new Vue({
 		}
 	}
 })
+
+console.log(vm.students)
